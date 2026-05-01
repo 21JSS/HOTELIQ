@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HotelIQ - App Huésped</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/base.css">
-    <link rel="stylesheet" href="../CSS/layout.css">
-    <link rel="stylesheet" href="../CSS/components.css">
-    <link rel="stylesheet" href="../CSS/guest.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="guest.css">
 </head>
+
 <body>
     <div class="app-container">
         <nav class="sidebar">
             <div class="logo">HotelIQ</div>
             <ul class="nav-links">
-                <li class="active"><a href="guest.html"><span class="icon">📱</span><span class="text">App Huésped</span></a></li>
+                <li class="active"><a href="guest.html"><span class="icon">📱</span><span class="text">App
+                            Huésped</span></a></li>
                 <li><a href="rooms.html"><span class="icon">🚪</span><span class="text">Habitaciones</span></a></li>
                 <li><a href="index.html"><span class="icon">📊</span><span class="text">Panel Control</span></a></li>
             </ul>
         </nav>
-        
+
         <main class="main-content">
             <div class="guest-dashboard">
                 <header class="app-header">
@@ -29,7 +32,7 @@
                         <p>Bienvenido, Carlos</p>
                     </div>
                     <div class="status-badge green room-selector-badge">
-                        <span class="dot"></span> 
+                        <span class="dot"></span>
                         <select id="room-select" class="room-select">
                             <option value="412">Habitación 412</option>
                             <option value="408">Habitación 408</option>
@@ -72,7 +75,8 @@
                             <span>Mantenimiento</span>
                         </div>
                     </div>
-                    <textarea class="problem-description" placeholder="Añade una descripción detallada del problema (opcional)..." rows="3"></textarea>
+                    <textarea class="problem-description"
+                        placeholder="Añade una descripción detallada del problema (opcional)..." rows="3"></textarea>
                 </div>
                 <div class="card">
                     <h3>Adjuntar evidencia</h3>
@@ -81,7 +85,7 @@
                 <button class="btn-primary" id="btn-send-report">Enviar reporte al hotel</button>
             </div>
         </main>
-        
+
         <nav class="bottom-nav">
             <a href="guest.html" class="nav-item active"><span class="icon">📱</span><span class="text">App</span></a>
             <a href="rooms.html" class="nav-item"><span class="icon">🚪</span><span class="text">Habitaciones</span></a>
@@ -92,4 +96,5 @@
     </div>
     <script src="../JS/script.js"></script>
 </body>
+
 </html>

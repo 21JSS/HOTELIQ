@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HotelIQ - Panel de Calidad</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/base.css">
-    <link rel="stylesheet" href="../CSS/layout.css">
-    <link rel="stylesheet" href="../CSS/components.css">
-    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
+
 <body>
     <div class="app-container">
         <nav class="sidebar">
@@ -17,10 +19,11 @@
             <ul class="nav-links">
                 <li><a href="guest.html"><span class="icon">📱</span><span class="text">App Huésped</span></a></li>
                 <li><a href="rooms.html"><span class="icon">🚪</span><span class="text">Habitaciones</span></a></li>
-                <li class="active"><a href="index.html"><span class="icon">📊</span><span class="text">Panel Control</span></a></li>
+                <li class="active"><a href="index.html"><span class="icon">📊</span><span class="text">Panel
+                            Control</span></a></li>
             </ul>
         </nav>
-        
+
         <main class="main-content">
             <div class="dashboard-panel">
                 <div class="dashboard-header card">
@@ -55,9 +58,11 @@
                 </div>
 
                 <div class="card alerts-card">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                         <h3 style="margin: 0;">Alertas activas</h3>
-                        <select id="alert-filter" style="padding: 5px 10px; border-radius: 6px; border: 1px solid var(--border-color); font-family: inherit; font-size: 13px; outline: none; cursor: pointer; background: var(--bg-color);">
+                        <select id="alert-filter"
+                            style="padding: 5px 10px; border-radius: 6px; border: 1px solid var(--border-color); font-family: inherit; font-size: 13px; outline: none; cursor: pointer; background: var(--bg-color);">
                             <option value="recent">Más recientes</option>
                             <option value="priority">Prioridad (Más problemas)</option>
                             <option value="room">Por habitación</option>
@@ -74,33 +79,41 @@
                             <span>Baño sucio</span>
                             <span>72%</span>
                         </div>
-                        <div class="bar-track"><div class="bar-fill red" style="width: 72%"></div></div>
+                        <div class="bar-track">
+                            <div class="bar-fill red" style="width: 72%"></div>
+                        </div>
                     </div>
                     <div class="problem-bar">
                         <div class="bar-label">
                             <span>Sábanas</span>
                             <span>48%</span>
                         </div>
-                        <div class="bar-track"><div class="bar-fill blue" style="width: 48%"></div></div>
+                        <div class="bar-track">
+                            <div class="bar-fill blue" style="width: 48%"></div>
+                        </div>
                     </div>
                     <div class="problem-bar">
                         <div class="bar-label">
                             <span>Mal olor</span>
                             <span>35%</span>
                         </div>
-                        <div class="bar-track"><div class="bar-fill brown" style="width: 35%"></div></div>
+                        <div class="bar-track">
+                            <div class="bar-fill brown" style="width: 35%"></div>
+                        </div>
                     </div>
                     <div class="problem-bar">
                         <div class="bar-label">
                             <span>Mantenimiento</span>
                             <span>20%</span>
                         </div>
-                        <div class="bar-track"><div class="bar-fill yellow" style="width: 20%"></div></div>
+                        <div class="bar-track">
+                            <div class="bar-fill yellow" style="width: 20%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        
+
         <nav class="bottom-nav">
             <a href="guest.html" class="nav-item"><span class="icon">📱</span><span class="text">App</span></a>
             <a href="rooms.html" class="nav-item"><span class="icon">🚪</span><span class="text">Habitaciones</span></a>
@@ -109,6 +122,7 @@
 
         <div class="toast-container" id="toast-container"></div>
     </div>
-    <script src="../JS/script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
